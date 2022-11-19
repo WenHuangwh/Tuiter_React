@@ -67,9 +67,9 @@ export const Login = () => {
         placeholder="password" type="password" />
       <button onClick={login} className="btn btn-primary mb-5">Login</button>
 
-      {/* <h1>Login As</h1>
+      <h1>Login As</h1>
 
-      <UserList users={existingUsers} deleteUser={deleteUser} /> */}
+      <UserList users={existingUsers} deleteUser={deleteUser} />
 
     </div>
   );
