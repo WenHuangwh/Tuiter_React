@@ -10,13 +10,13 @@ const Home = () => {
   const [tuits, setTuits] = useState([]);
   const [tuit, setTuit] = useState('');
   const userId = uid;
-  const findTuits = () => {
+  const findTuits = async () => {
     if (uid) {
-      return service.findTuitByUser(uid)
-        .then(tuits => setTuits(tuits))
+      const tuits = await service.findTuitByUser(uid);
+      return setTuits(tuits);
     } else {
-      return service.findAllTuits()
-        .then(tuits => setTuits(tuits))
+      const tuits_1 = await service.findAllTuits();
+      return setTuits(tuits_1);
     }
   }
   useEffect(() => {
