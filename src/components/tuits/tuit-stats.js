@@ -2,7 +2,14 @@ import React from "react";
 import { useState, useEffect, useCallback } from "react";
 import { renderMatches } from "react-router-dom";
 import * as likesService from "../../services/likes-service";
-
+/**
+  * Tuit stats component.
+  *
+  * @typedef TuitStats stats of tuits, including: number of replies, retuits, likes, dislikes
+  * @property {tuit} - A tuit.
+  * @property {likeTuit} - A function that user can like a tuit.
+  * @property {dislikeTuit} - A function that user can dislike a tuit.
+  */
 const TuitStats = ({ tuit, likeTuit, dislikeTuit }) => {
   return (
     <div className="row mt-2">
