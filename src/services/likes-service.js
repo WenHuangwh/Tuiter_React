@@ -20,7 +20,7 @@ export const findAllTuitsLikedByUser = (userId) =>
     api.get(`${USERS_API}/${userId}/likes`)
     .then(response => response.data);
 
-
+// Add service to retreat all tuits disliked bu user
 export const findAllTuitsDislikedByUser = (userId) =>
     api.get(`${USERS_API}/${userId}/dislikes`)
     .then(response => response.data);

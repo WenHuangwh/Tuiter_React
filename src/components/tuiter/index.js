@@ -20,42 +20,43 @@ import MyLikes from "../profile/my-likes";
 import MyDislikes from "../profile/my-dislikes";
 
 function Tuiter() {
-  return (
-    <HashRouter>
-      <div className="container">
-        <div className="ttr-tuiter">
-          <div className="ttr-left-column">
-            <Navigation />
-          </div>
-          <div className="ttr-center-column">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/tuiter" element={<Home />} />
-              <Route path="/tuiter/:uid" element={<Home />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/home/:uid" element={<Home />} />
-              <Route path="/explore" element={<Explore />} />
-              <Route path="/notifications" element={<Notifications />} />
-              <Route path="/messages" element={<Messages />} />
-              <Route path="/bookmarks" element={<Bookmarks />} />
-              <Route path="/lists" element={<Lists />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/profile/edit" element={<EditProfile />} />
-              <Route path="/movies" element={<Movies />} />
-              <Route path="/movies/:imdbID" element={<MovieDetails />} />
-              <Route path="/more" element={<More />} />
-              <Route path="/profile/mytuits" element={<MyTuits />} />
-              <Route path="/profile/likes" element={<MyLikes />} />
-              <Route path="/profile/dislikes" element={<MyDislikes />} />
-            </Routes>
-          </div>
-          <div className="ttr-right-column">
-            <WhatsHappening />
-          </div>
-        </div>
-      </div>
-    </HashRouter>
-  );
+    return (
+        <HashRouter>
+            <div className="container">
+                <div className="ttr-tuiter">
+                    <div className="ttr-left-column">
+                        <Navigation />
+                    </div>
+                    <div className="ttr-center-column">
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/tuiter" element={<Home />} />
+                            <Route path="/tuiter/:uid" element={<Home />} />
+                            <Route path="/home" element={<Home />} />
+                            <Route path="/home/:uid" element={<Home />} />
+                            <Route path="/explore" element={<Explore />} />
+                            <Route path="/notifications" element={<Notifications />} />
+                            <Route path="/messages" element={<Messages />} />
+                            <Route path="/bookmarks" element={<Bookmarks />} />
+                            <Route path="/lists" element={<Lists />} />
+                            <Route path="/profile" element={<Profile />} />
+                            <Route path="/profile/edit" element={<EditProfile />} />
+                            <Route path="/movies" element={<Movies />} />
+                            <Route path="/movies/:imdbID" element={<MovieDetails />} />
+                            <Route path="/more" element={<More />} />
+                            <Route path="/profile/mytuits" element={<MyTuits />} />
+                            <Route path="/profile/likes" element={<MyLikes />} />
+              // Add route to my-dislikes-screen page
+                            <Route path="/profile/dislikes" element={<MyDislikes />} />
+                        </Routes>
+                    </div>
+                    <div className="ttr-right-column">
+                        <WhatsHappening />
+                    </div>
+                </div>
+            </div>
+        </HashRouter>
+    );
 }
 export default Tuiter;

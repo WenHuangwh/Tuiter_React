@@ -93,6 +93,7 @@ const Profile = () => {
                 className={`nav-link ${location.pathname.indexOf('mylikes') >= 0 ? 'active' : ''}`}>
                 Likes</Link>
             </li>
+            // Add a link to page of my-dislikes-screen
             <li className="nav-item">
               <Link to="/profile/dislikes"
                 className={`nav-link ${location.pathname.indexOf('mydislikes') >= 0 ? 'active' : ''}`}>
