@@ -17,6 +17,7 @@ import Movies from "../movies";
 import MovieDetails from "../movies/details";
 import MyTuits from "../profile/my-tuits";
 import MyLikes from "../profile/my-likes";
+import MyDislikes from "../profile/my-dislikes";
 
 function Tuiter() {
   return (
@@ -46,6 +47,7 @@ function Tuiter() {
               <Route path="/more" element={<More />} />
               <Route path="/profile/mytuits" element={<MyTuits />} />
               <Route path="/profile/likes" element={<MyLikes />} />
+              <Route path="/profile/dislikes" element={<MyDislikes />} />
             </Routes>
           </div>
           <div className="ttr-right-column">
