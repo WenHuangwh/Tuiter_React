@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
   * @typedef MyDislikes page
   */
 const MyDislikes = () => {
-    // Retreat all tuits disliked by me
     const [dislikedTuits, setDislikedTuis] = useState([]);
     const findTuitsIDislike = () =>
         service.findAllTuitsDislikedByUser("me")

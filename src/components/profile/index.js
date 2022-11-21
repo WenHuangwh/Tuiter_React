@@ -10,7 +10,6 @@ import { Routes, Route } from "react-router-dom";
 import TuitsAndReplies from "./tuits-and-replies";
 import Media from "./media";
 import MyLikes from "./my-likes";
-import MyDislikes from "./my-dislikes";
 const Profile = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -93,7 +92,6 @@ const Profile = () => {
                 className={`nav-link ${location.pathname.indexOf('mylikes') >= 0 ? 'active' : ''}`}>
                 Likes</Link>
             </li>
-            // Add a link to page of my-dislikes-screen
             <li className="nav-item">
               <Link to="/profile/dislikes"
                 className={`nav-link ${location.pathname.indexOf('mydislikes') >= 0 ? 'active' : ''}`}>

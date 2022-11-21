@@ -47,7 +47,6 @@ function Tuiter() {
                             <Route path="/more" element={<More />} />
                             <Route path="/profile/mytuits" element={<MyTuits />} />
                             <Route path="/profile/likes" element={<MyLikes />} />
-              // Add route to my-dislikes-screen page
                             <Route path="/profile/dislikes" element={<MyDislikes />} />
                         </Routes>
                     </div>
